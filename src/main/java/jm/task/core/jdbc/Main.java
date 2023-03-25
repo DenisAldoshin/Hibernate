@@ -12,12 +12,12 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
         UserServiceImpl userService = new UserServiceImpl();
-//        userService.createUsersTable();
+        userService.createUsersTable();
         userService.dropUsersTable();
-//        userService.saveUser("Pavel", "Pavlovich", (byte) 56);
+        userService.saveUser("Pavel", "Pavlovich", (byte) 56);
 
-//        userService.removeUserById(1);
-//        userService.getAllUsers();
-//        userService.cleanUsersTable();
+        userService.removeUserById(1);
+        userService.getAllUsers();
+        userService.cleanUsersTable();
     }
 }
